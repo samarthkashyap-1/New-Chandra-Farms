@@ -45,7 +45,7 @@ export default function Hero() {
 
       {/* Scroll Down Indicator */}
       <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-8  mx-auto"
         animate={{ y: [0, 10, 0] }}
         transition={{ repeat: Number.POSITIVE_INFINITY, duration: 1.5 }}
       >

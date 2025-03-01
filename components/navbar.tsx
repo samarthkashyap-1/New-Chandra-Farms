@@ -77,7 +77,7 @@ export default function Navbar() {
 
         {/* Mobile Menu Button */}
         <button
-          className="lg:hidden text-gray-800 focus:outline-none"
+          className="lg:hidden  focus:outline-none"
           onClick={toggleMenu}
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
