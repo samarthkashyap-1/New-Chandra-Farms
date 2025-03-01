@@ -81,7 +81,7 @@ export default function Navbar() {
           onClick={toggleMenu}
           aria-label={isOpen ? "Close menu" : "Open menu"}
         >
-          {isOpen ? <X size={24} /> : <Menu size={24} />}
+          {isOpen ? <X size={24} /> : <Menu size={24} color={scrolled ? "black" : "white"} />}
         </button>
       </div>
 
