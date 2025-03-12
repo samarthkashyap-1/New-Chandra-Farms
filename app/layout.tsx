@@ -6,7 +6,6 @@ import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 import { Analytics } from "@vercel/analytics/react"
 import Head from "next/head"
-import { usePathname } from "next/navigation"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const playfair = Playfair_Display({ subsets: ["latin"], variable: "--font-playfair" })
@@ -20,8 +19,7 @@ export const metadata: Metadata = {
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
-  const pathname = usePathname();
-  const canonicalUrl = `https://chandrafarms.in${pathname}`
+  const canonicalUrl = `https://chandrafarms.in`
 
   return (
     <html lang="en">
