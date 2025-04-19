@@ -18,7 +18,7 @@ export default function ContactForm() {
     guestCount: "",
     message: "",
   })
-  const contactref = collection(db, "ContactUs");
+  const contactref = collection(db, "ChandraFarmsContactForm");
 
 
   const [isSubmitting, setIsSubmitting] = useState(false)
