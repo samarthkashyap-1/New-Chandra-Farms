@@ -33,7 +33,7 @@ export default function ContactForm() {
     e.preventDefault()
     setIsSubmitting(true)
     try {
-      await addDoc(contactref, formData);
+      await addDoc(contactref, {...formData, timestamp: new Date()});
       setIsSubmitting(false)
       setIsSubmitted(true)
       setFormData({
